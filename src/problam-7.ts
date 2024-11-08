@@ -12,11 +12,13 @@ constructor(make:string,model:string,year:number){
   getCarAge():number|string{
     const currentYear = new Date().getFullYear();
     const yearCalcult = this.year = currentYear-this.year
-    return `${yearCalcult} (assuming current year is ${currentYear  })`
+    return `${yearCalcult} (assuming current year is ${currentYear })`
   }
 }
-const car = new Car("Honda", "Civic", 2018);
-console.log(car.getCarAge());
+ const car = new Car("Honda", "Civic", 2018);
+ car.getCarAge()
+
+
 
 
 
